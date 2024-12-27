@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 5</title>
+</head>
+<body>
+    <!-- N1 -->
+    <h2>Вибери напой або помри😅</h2>
+    <select id="drinkSelect" onchange="drinkMessage()">
+        <option value="">Виберіть напій</option>
+        <option value="Кава">Кава</option>
+        <option value="Чай">Чай</option>
+        <option value="Сік">Сік</option>
+    </select>
+    <p id="drinkResult"></p>
+
+
+    <!-- N2 -->
+    <h2>Перевірка дня тижня</h2>
+    <input type="text" id="dayInput" placeholder="Введіть день тижня">
+    <button onclick="checkingDay()">Перевірити що ти навибирав</button>
+    <p id="dayResult"></p>
+
+
+    <!-- N3 -->
+    <h2>Перевірка на те,коли ми ходимо в шапці а коли в шортах😂</h2>
+    <input type="number" id="monthVvod" placeholder="Введіть номер місяця 1-12" min="1" max="12">
+    <button onclick="checkingSeason()">Перевірити що вийшло</button>
+    <p id="season4k"></p>
+
+
+    <!-- N4 -->
+    <h2>Кількість днів у місяці ,,Логічно ж що від 28 до 31,,</h2>
+    <input type="number" id="daysInput" placeholder="Введіть номер місяця (1-12)" min="1" max="12">
+    <button onclick="checkDaysInMonth()">Перевірити очевидне</button>
+    <p id="daysResult"></p>
+
+
+    <!-- N5 -->
+    <h2>Перевірка кольору</h2>
+    <input type="text" id="colorInput" placeholder="Введіть із запропонованих,колір">
+    <button onclick="checkColor()">Перевірити</button>
+    <p id="colorResult"></p>
+
+
+    <!-- N6 -->
+    <h2>Створюємо те що допоможе на математиці</h2>
+    <input type="number" id="num1" placeholder="Перше число">
+    <input type="number" id="num2" placeholder="Друге число">
+    <select id="selectingWhatDoYouLike">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <button onclick="calculate()">Обчислити</button>
+    <p id="calcResult"></p>
+
+    
+    <script src="js/js.js" type="module"></script>
+</body>
+</html>
